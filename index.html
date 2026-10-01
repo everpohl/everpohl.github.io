@@ -1,5 +1,28 @@
-<p>
-  Server IP: mc.evermatt.me<br>
-  <a href="HellServer.mrpack">Modpack Download (.mrpack)</a><br>
-  <a href="HellServer.zip">Modpack Download (.zip)</a>
-</p>
+<html lang="en">
+  <head>
+    <title>Everett's Website</title>
+  </head>
+  <body>
+    <p>
+      Server IP: mc.evermatt.me<br>
+      <a href="HellServer.mrpack">Modpack Download (.mrpack)</a><br>
+      <a href="HellServer.zip">Modpack Download (.zip)</a>
+    </p>
+    
+    <p id="text-to-copy">This is the text that will be copied.</p>
+    <button onclick="copyText()">Copy Text</button>
+    <script>
+      function copyText() {
+      // Get the text from the element
+      let text = document.getElementById("text-to-copy").innerText;
+      
+      // Copy text to clipboard
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+      }).catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+    }
+    </script>
+  </body>
+</html>
