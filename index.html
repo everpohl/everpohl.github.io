@@ -3,33 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Everett's Website</title>
+    <script src="copy.js" defer></script>
   </head>
   <body>
     <p>
-      Server IP: <span id="text-to-copy">mc.evermatt.me</span><button onclick="copyText()">Copy IP Address</button><br>
+      Server IP: <span id="text-to-copy">mc.evermatt.me</span>
+      <button onclick="copyText()">Copy IP Address</button><br>
       <a href="HellServer.mrpack">Modpack Download (.mrpack)</a><br>
       <a href="HellServer.zip">Modpack Download (.zip)</a>
     </p>
-    
-    <script>
-      function copyText() {
-        const text = document.getElementById("text-to-copy").innerText;
-      
-        if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(text)
-            .then(() => alert("Copied: " + text))
-            .catch(err => console.error("Failed to copy: ", err));
-        } else {
-          // Fallback for non-secure contexts
-          const ta = document.createElement("textarea");
-          ta.value = text;
-          document.body.appendChild(ta);
-          ta.select();
-          document.execCommand("copy");
-          document.body.removeChild(ta);
-          alert("Copied: " + text);
-        }
-      }
-    </script>
   </body>
 </html>
