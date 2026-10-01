@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <title>Everett's Website</title>
     <link rel="stylesheet" href="styles.css">
     <script src="copy.js" defer></script>
-  </head>
-  <body>
+    <script src="footer.js" defer></script>
+</head>
+<body>
+<header>Everett's Website</header>
+<main>
     <p>
-      Server IP: <span id="text-to-copy">mc.evermatt.me</span>
-      <button onclick="copyText()">Copy IP Address</button><br>
-      <a href="modpack/HellServer.mrpack">Modrinth Download (.mrpack)</a><br>
-      <a href="modpack/HellServerModpack.zip">Modpack Download (.zip)</a><br>
-      <a href="modpack/HellServerPrismInstance.zip">Prism Instance Download (.zip)</a>
+        Server IP: <span id="text-to-copy">mc.evermatt.me</span>
+        <button onclick="copyText()">Copy IP Address</button>
+        <br>
+        <a href="modpack/HellServer.mrpack">Modrinth Download (.mrpack)</a><br>
+        <a href="modpack/HellServerModpack.zip">Modpack Download (.zip)</a><br>
+        <a href="modpack/HellServerPrismInstance.zip">Prism Instance Download (.zip)</a>
     </p>
-    <h2>Want to find the best way to configure and manage modpacks!</h2>
-    <p>
-      Prism launcher makes it super easy to configure and manage your modpacks. <br>
-      Download it here: <br>
-      Windows: <a href="https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Windows-MSVC-Setup-11.1.1.exe">Click here</a><br>
-      macOS: <a href="https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-macOS-11.1.1.zip">Click Here</a><br>
-      Linux: <a href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher">Click Here</a><br>
-      <br>
-      To use Prism Launcher to set up this server, download the .mrpack file or the prism instance file, <br>
-      click the "Add Instance" button, then "import", then browse to the file and click ok!
-    </p>
-  </body>
+    <article>
+        <h2>Want to find the best way to configure and manage modpacks!</h2>
+        <p>
+            <a href="https://prismlauncher.org">Prism launcher</a> makes it super easy to configure and manage your
+            modpacks. <br>
+            Download it here: <br>
+            Windows: <a
+                href="https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Windows-MSVC-Setup-11.1.1.exe">Click
+            here</a><br>
+            macOS: <a
+                href="https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-macOS-11.1.1.zip">Click
+            Here</a><br>
+            Linux: <a href="https://flathub.org/apps/details/org.prismlauncher.PrismLauncher">Click Here</a><br>
+            <br>
+            To use Prism Launcher to set up this server, download the .mrpack file or the prism instance file, <br>
+            click the "Add Instance" button, then "import", then browse to the file and click ok!
+        </p>
+    </article>
+</main>
+<my-footer></my-footer>
+</body>
 </html>
