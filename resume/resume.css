@@ -1,0 +1,74 @@
+/* format the entire page to resemble a paper document on a gray background */
+body {
+    background-color: #9a9a9a;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 11pt;
+    line-height: 1.35;
+    color: #000;
+    padding: 2rem 1rem;
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 8.5in;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0 0.75in;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+main {
+    padding-top: 0.5in;
+    padding-bottom: 0.5in;
+}
+
+/* center the h1 and contact info */
+h1, .contact {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.contact {
+    margin-top: 0.25rem;
+}
+
+.contact a {
+    color: inherit;
+}
+
+/* h3 headers should be bold */
+h3 {
+    font-weight: bold;
+    margin: 1rem 0 0.25rem;
+    border-bottom: 1px solid #000;
+}
+
+/* the dates should be right aligned on the page, on the same line as the job title */
+.dates {
+    float: right;
+}
+
+/* job titles should be italicized */
+.title {
+    font-style: italic;
+}
+
+/* employers should be bolded (but not locations) */
+.employer {
+    font-weight: bold;
+}
+
+/* italicize the research project titles (covered by .title above) */
+
+/* bold the skill categories */
+li > .title {
+    font-style: normal;
+    font-weight: bold;
+}
+
+ul {
+    margin: 0.25rem 0 0.5rem;
+}
